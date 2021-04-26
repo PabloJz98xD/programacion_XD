@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/home/pablojz/etapa1/etapa1.csproj": {}
+    "/home/pablojz/programacion_XD/etapa1/etapa1.csproj": {}
   },
   "projects": {
-    "/home/pablojz/etapa1/etapa1.csproj": {
+    "/home/pablojz/programacion_XD/etapa1/etapa1.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/pablojz/etapa1/etapa1.csproj",
+        "projectUniqueName": "/home/pablojz/programacion_XD/etapa1/etapa1.csproj",
         "projectName": "etapa1",
-        "projectPath": "/home/pablojz/etapa1/etapa1.csproj",
+        "projectPath": "/home/pablojz/programacion_XD/etapa1/etapa1.csproj",
         "packagesPath": "/home/pablojz/.nuget/packages/",
-        "outputPath": "/home/pablojz/etapa1/obj/",
+        "outputPath": "/home/pablojz/programacion_XD/etapa1/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/home/pablojz/.nuget/NuGet/NuGet.Config"
