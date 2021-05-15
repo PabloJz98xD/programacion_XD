@@ -12,6 +12,7 @@ namespace coreEscuela.entidades
         public string Pais { get; set; }//Comando prop te crea el get y set de manera automatica
         public string Ciudad { get; set; }
         public tipoEscuela tipoEscuela { get; set; }
+        public curso[] Cursos { get; set; }
         
         // public escuela(string nombre, int ano)
         // {
