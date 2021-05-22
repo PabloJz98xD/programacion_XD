@@ -1,5 +1,6 @@
 ﻿using System;
 using coreEscuela.entidades;
+using static System.Console;
 namespace etapa1
 {
     class Program
@@ -25,6 +26,9 @@ namespace etapa1
             // var curso3 = new curso(){
             //     nombre="301"
             // };
+            //===================     ===================
+            //===================     ===================
+            //=================== Declararion de arreglos     ===================
             var arregloCursos = new curso[3];
             arregloCursos[0] = new curso(){
                 nombre="101"
@@ -35,6 +39,16 @@ namespace etapa1
             arregloCursos[2] = new curso(){
                 nombre="301"
             };
+            // ===================     ===================
+            // ===================     ===================
+            escuela.Cursos = new curso[]{
+            new curso(){ nombre = "101"},
+            new curso() {nombre = "201"},
+            new curso{nombre = "301"}
+            };
+            //Usando escuela.Cursos = new curso[] con una forma diferente de declarar el arreglo.
+            impimirCursosEscuela(escuela);
+            //===========================
             System.Console.WriteLine("==================== while");
             // Console.WriteLine(curso1.nombre + ", " + curso1.uniqueId);
             // Console.WriteLine($"{curso2.nombre}, {curso2.uniqueId}");
@@ -46,6 +60,64 @@ namespace etapa1
             imprimirCursosFor(arregloCursos);
             System.Console.WriteLine("==================== forEach");
             imprimirCursosForEach(arregloCursos);
+            //==========================
+            //==========================
+            //==========================
+            //Ejemplos de como utilizar los condicionales
+            //==========================
+            //==========================
+            bool rta = 10 == 10;//true
+            int cantidad = 10;
+
+            if (rta == false)
+            {
+                WriteLine("Se cumplio la condición #1");
+            }
+            else if (cantidad > 15)
+            {
+                WriteLine("Se cumplio la condición #2");
+            }
+            else
+            {
+                WriteLine("NO Se cumplio la condición");
+            }
+
+            if(cantidad > 5 && rta == false)
+            {
+                WriteLine("Se cumplio la condición #3");
+            }
+
+            
+            if(cantidad > 5 && rta )
+            {
+                WriteLine("Se cumplio la condición #4");
+            }
+
+            cantidad = 10;
+            if(
+                (cantidad > 15 || !rta) 
+                && (cantidad % 5 == 0 )
+            )
+            {
+                WriteLine("Se cumplio la condición #5");
+            }
+
+        
+            //==========================
+        }
+                private static void impimirCursosEscuela(escuela escuela)
+        {
+            WriteLine("====================");
+            WriteLine("Cursos de la Escuela Mejorado");
+            WriteLine("====================");
+
+            if (escuela?.Cursos != null)
+            {
+                foreach (var curso in escuela.Cursos)
+                {
+                    WriteLine($"Nombre {curso.nombre  }, Id  {curso.uniqueId}");
+                }
+            }
         }
 
         private static void imprimirCursosWhile(curso[] arregloCursos)
